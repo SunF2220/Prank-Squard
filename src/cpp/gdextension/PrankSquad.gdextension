@@ -1,0 +1,8 @@
+[configuration]
+entry_symbol = "prank_squad_init"
+compatibility_minimum = "4.3"
+
+[libraries]
+windows.x86_64 = "res://bin/PrankSquad.dll"
+linux.x86_64 = "res://bin/PrankSquad.so"
+macos = "res://bin/PrankSquad.dylib"

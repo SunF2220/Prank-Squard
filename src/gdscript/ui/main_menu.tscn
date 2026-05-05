@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnd02e3ue82nv"]
+
+[ext_resource type="Script" path="res://src/gdscript/ui/main_menu.gd" id="1_ylew8"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ylew8")
+
+[node name="MenuContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+
+[node name="TitleLabel" type="Label" parent="MenuContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "PRANK SQUAD"
+horizontal_alignment = 1
+
+[node name="VSButton" type="Button" parent="MenuContainer"]
+layout_mode = 2
+text = "VS Mode"
+
+[node name="StageButton" type="Button" parent="MenuContainer"]
+layout_mode = 2
+text = "Stage Mode"
+
+[node name="CreatorButton" type="Button" parent="MenuContainer"]
+layout_mode = 2
+text = "Character Creator"
+
+[node name="TrainingButton" type="Button" parent="MenuContainer"]
+layout_mode = 2
+text = "Training"
+
+[node name="QuitButton" type="Button" parent="MenuContainer"]
+layout_mode = 2
+text = "Quit"

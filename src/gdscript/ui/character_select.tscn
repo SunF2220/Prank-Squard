@@ -1,0 +1,111 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3gqw2gk5h4cj"]
+
+[ext_resource type="Script" path="res://src/gdscript/ui/character_select.gd" id="1_g4x1x"]
+
+[node name="CharacterSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_g4x1x")
+
+[node name="MainContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+
+[node name="P1Panel" type="Panel" parent="MainContainer"]
+layout_mode = 2
+
+[node name="P1VBox" type="VBoxContainer" parent="MainContainer/P1Panel"]
+layout_mode = 0
+offset_right = 280.0
+offset_bottom = 380.0
+
+[node name="P1Label" type="Label" parent="MainContainer/P1Panel/P1VBox"]
+layout_mode = 2
+text = "Player 1"
+horizontal_alignment = 1
+
+[node name="P1Name" type="Label" parent="MainContainer/P1Panel/P1VBox"]
+layout_mode = 2
+text = "Davis"
+horizontal_alignment = 1
+
+[node name="P1Stats" type="Label" parent="MainContainer/P1Panel/P1VBox"]
+layout_mode = 2
+text = "HP:500 MP:500 SPD:5"
+horizontal_alignment = 1
+
+[node name="P1Nav" type="HBoxContainer" parent="MainContainer/P1Panel/P1VBox"]
+layout_mode = 2
+
+[node name="P1Prev" type="Button" parent="MainContainer/P1Panel/P1VBox/P1Nav"]
+layout_mode = 2
+text = "<"
+
+[node name="P1Lock" type="Button" parent="MainContainer/P1Panel/P1VBox/P1Nav"]
+layout_mode = 2
+text = "Lock In"
+
+[node name="P1Next" type="Button" parent="MainContainer/P1Panel/P1VBox/P1Nav"]
+layout_mode = 2
+text = ">"
+
+[node name="CenterVBox" type="VBoxContainer" parent="MainContainer"]
+layout_mode = 2
+
+[node name="VSLabel" type="Label" parent="MainContainer/CenterVBox"]
+layout_mode = 2
+text = "VS"
+horizontal_alignment = 1
+
+[node name="FightBtn" type="Button" parent="MainContainer/CenterVBox"]
+layout_mode = 2
+text = "FIGHT!"
+
+[node name="P2Panel" type="Panel" parent="MainContainer"]
+layout_mode = 2
+
+[node name="P2VBox" type="VBoxContainer" parent="MainContainer/P2Panel"]
+layout_mode = 0
+offset_right = 280.0
+offset_bottom = 380.0
+
+[node name="P2Label" type="Label" parent="MainContainer/P2Panel/P2VBox"]
+layout_mode = 2
+text = "Player 2"
+horizontal_alignment = 1
+
+[node name="P2Name" type="Label" parent="MainContainer/P2Panel/P2VBox"]
+layout_mode = 2
+text = "Ice Ninja"
+horizontal_alignment = 1
+
+[node name="P2Stats" type="Label" parent="MainContainer/P2Panel/P2VBox"]
+layout_mode = 2
+text = "HP:380 MP:450 SPD:7"
+horizontal_alignment = 1
+
+[node name="P2Nav" type="HBoxContainer" parent="MainContainer/P2Panel/P2VBox"]
+layout_mode = 2
+
+[node name="P2Prev" type="Button" parent="MainContainer/P2Panel/P2VBox/P2Nav"]
+layout_mode = 2
+text = "<"
+
+[node name="P2Lock" type="Button" parent="MainContainer/P2Panel/P2VBox/P2Nav"]
+layout_mode = 2
+text = "Lock In"
+
+[node name="P2Next" type="Button" parent="MainContainer/P2Panel/P2VBox/P2Nav"]
+layout_mode = 2
+text = ">"
+
+[node name="BackBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 570.0
+offset_right = 420.0
+offset_bottom = 610.0
+text = "Back"

@@ -1,14 +1,12 @@
-# ── Godot ──
+# Godot
 .godot/
 *.translation
 *.uid
 export/
-exports/
-import/
 
-# ── GDExtension build ──
+# GDExtension build
 godot-cpp/
-src/cpp/.sconsign.dblite
+bin/
 .sconsign.dblite
 *.dll
 *.so
@@ -20,20 +18,20 @@ src/cpp/.sconsign.dblite
 *.o
 *.os
 
-# ── IDE ──
+# Claude Code
+.claude/
+
+# IDE
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
 
-# ── OS ──
+# OS
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# ── Claude Code ──
-.claude/
-
-# ── User data (runtime generated) ──
+# User data
 user://
